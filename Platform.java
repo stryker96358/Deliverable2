@@ -1,0 +1,11 @@
+
+/**
+ * Enumeration class Platform - write a description of the enum class here
+ *
+ * @author (your name here)
+ * @version (version number or date here)
+ */
+public enum Platform
+{
+    pc,xbox,playstation,vr,mobile,android
+}
