@@ -1,4 +1,4 @@
-import java.util.HashMap;
+import java.util.ArrayList;   
 /**
  * Write a description of class Game here.
  *
@@ -10,7 +10,8 @@ public class Game
     String name;
     String genre;
     String platform;
-    int rating;
+    String ageRating;
+    double[] rating;
     
     /**
      * Constructor for objects of class Game
