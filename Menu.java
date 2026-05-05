@@ -1,12 +1,20 @@
 
 /**
- * Enumeration class Menu - write a description of the enum class here
+ * Class containing a menu for all actions that can be done by users
  *
  * @author Yuliia L.
  * @version 04.05.26
  */
-public enum Menu
+public class Menu extends gameLibrary
 {
-    PRINT_LIBRARY, LIST_ALL, FILTERED_GAMES, TOP_RATED, 
-    GAME_DETAILS, RATE_GAME, START_SESSION, SESSION_LOG, ADD_GAME, EXIT
+
+    /**
+     * Constructor for objects of class Menu
+     */
+    public Menu()
+    {
+        // initialise instance variables
+        
+    }
+
 }
