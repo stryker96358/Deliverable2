@@ -7,13 +7,13 @@
  */
 public class gameSession
 {
-    public int sessiontime;
+    long start;
+    long finish;
+    long timeElapsed;
     /**
      * Constructor for objects of class gameSession
      */
-    public gameSession()
-    {
-        
+    public gameSession(){
         
     }
     /**
@@ -21,18 +21,22 @@ public class gameSession
      * Start a game session
      */
     public void Start(){
-        
+        long start = System.currentTimeMillis() / 1000;
+        this.start = start;
     }
     /**
      * Method to end  a game session
      */
     public void End(){
-        
+        long finish = System.currentTimeMillis() /1000;
+        this.finish = finish;
     }
     /**
      * Get a total time of a session
      */
-    public int getSummary(int sessiontime){
-        return sessiontime;
+    public long getSummary(){
+        long timeElapsed = finish - start;
+        System.out.println("Total session time: " + timeElapsed);
+        return timeElapsed;
     }
 }

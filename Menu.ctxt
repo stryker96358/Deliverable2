@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Menu
+comment0.text=\r\n\ Class\ containing\ a\ menu\ for\ all\ actions\ that\ can\ be\ done\ by\ users\r\n\r\n\ @author\ Yuliia\ L.\r\n\ @version\ 04.05.26\r\n
+comment1.params=
+comment1.target=Menu()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Menu\r\n
+numComments=2

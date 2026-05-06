@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=gameSession
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ GameSession\ here.\r\n\r\n\ @author\ Yuliia\ L.\r\n\ @version\ 04.05.26\r\n
+comment1.params=
+comment1.target=gameSession()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ gameSession\r\n
+comment2.params=
+comment2.target=void\ Start()
+comment2.text=\r\n\r\n\ Start\ a\ game\ session\r\n
+comment3.params=
+comment3.target=void\ End()
+comment3.text=\r\n\ Method\ to\ end\ \ a\ game\ session\r\n
+comment4.params=
+comment4.target=long\ getSummary()
+comment4.text=\r\n\ Get\ a\ total\ time\ of\ a\ session\r\n
+numComments=5
