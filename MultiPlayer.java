@@ -16,11 +16,18 @@ public class MultiPlayer extends Game
                         int maxPlayers, boolean online)
     {
         super(name,genre,platform,ageRating);
-        this.maxPlayers = maxPlayers;
+        this.online = online;
+        
+        if (maxPlayers > 0) {
+            this.maxPlayers = maxPlayers;
+        }
+        else {
+            this.maxPlayers = 1;
+        }
         this.online = online;
     }
     
     public void hostGame() {
-        System.out.println("Hosting multiplayer game...");
+        System.out.println("Hosting multiplayer game:" + getName());
     }
 }
