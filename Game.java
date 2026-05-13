@@ -35,12 +35,22 @@ public class Game
         return sum / ratings.size();
     }
     
-    public void addRating(double rating) {
-        ratings.add(rating);
+    public boolean addRating(double rating) {
+        if (rating >= 0 && rating <= 10) {
+            ratings.add(rating);
+            return true;
+        }
+        return false;
     }
     
     public String getDetails() {
-        return name + " (" + genre + ", " + platform + ") Rating: " + getAverageRating();
+        return String.format(
+        "%s (%s, %s, %s) | Average Rating: %.1f/10",
+        name,
+        genre,
+        platform,
+        ageRating,
+        getAverageRating());
     }
     
     public String getName() {
@@ -49,6 +59,14 @@ public class Game
     
     public Genre getGenre() {
         return genre;
+    }
+    
+    public Platform getPlatform() {
+        return platform;
+    }
+    
+    public ageRating getAgeRating() {
+        return ageRating;
     }
     
     @Override

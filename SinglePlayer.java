@@ -17,10 +17,16 @@ public class SinglePlayer extends Game
     {
         super(name,genre,platform,ageRating);
         this.storyMode = storyMode;
-        this.completionTime = completionTime;
+        
+        if (completionTime >= 0) {
+            this.completionTime = completionTime;
+        }
+        else {
+            this.completionTime = 0;
+        }
     }
     
     public void play() {
-        System.out.println("Playing single-player game...");
+        System.out.println("Playing single-player game:" + getName());
     }
 }
