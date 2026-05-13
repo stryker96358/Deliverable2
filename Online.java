@@ -15,10 +15,19 @@ public class Online extends MultiPlayer
                   int maxPlayers, String serverName)
     {
         super(name, genre, platform, ageRating, maxPlayers, true);
-        this.serverName = serverName;
+        
+        if (serverName != null && !serverName.isBlank()) {
+            this.serverName = serverName;
+        } else {
+            this.serverName = "Default Server";
+        }
     }
     
     public void connect() {
-        System.out.println("Connecting to server: " + serverName);
+        System.out.println(
+        "Connecting to server: " 
+        + serverName
+        + "for "
+        + getName());
     }
 }
