@@ -10,7 +10,7 @@ public class Main
     /**
      * Constructor for objects of class Main
      */
-    public Main()
+    public Main(String[] args)
     {
         Scanner input = new Scanner(System.in);
         gameLibrary library = new gameLibrary();
@@ -68,12 +68,13 @@ public class Main
             case 11:
                 System.out.print("Game name: ");
                 String name = input.nextLine();
+                input.nextLine();
                 
                 System.out.print("Genre: ");
-                Genre genre = Genre.valueOf(input.nextLine().toUpperCase());
+                Genre genre = Genre.valueOf(input.nextLine().toLowerCase());
                 
                 System.out.print("Platform: ");
-                Platform platform = Platform.valueOf(input.nextLine().toUpperCase());
+                Platform platform = Platform.valueOf(input.nextLine().toLowerCase());
                 
                 System.out.print("Age rating: ");
                 ageRating agerating = ageRating.valueOf(input.nextLine().toUpperCase()); //both class and objects named ageRating create problems.
@@ -86,7 +87,8 @@ public class Main
                 break;
             default:
                 System.out.println("Invalid input");
-            }
-            input.close();
+        }
+        while(choice != 0);
+        input.close();
         }
         }

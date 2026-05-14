@@ -40,6 +40,7 @@ public class Game
             ratings.add(rating);
             return true;
         }
+        System.out.println("enter a rating between 1-10");
         return false;
     }
     
