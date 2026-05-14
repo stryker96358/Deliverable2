@@ -12,10 +12,10 @@ public class Main
      */
     public Main(String[] args)
     {
+        int choice = -1;
+        while (choice !=0){
         Scanner input = new Scanner(System.in);
         gameLibrary library = new gameLibrary();
-        
-        int choice;
         
         System.out.println("====Options====");
         System.out.println("1. Print library details");
@@ -33,8 +33,7 @@ public class Main
         
         System.out.print("Choice: ");
         choice = input.nextInt();
-        
-        switch (choice){
+            switch (choice){
             case 1:
                 library.toString();
                 break;
@@ -83,12 +82,11 @@ public class Main
                 System.out.print("Game added");
                 break;
             case 0:
-                System.out.print("Goodbye!");
+                System.out.println("Goodbye!");
                 break;
             default:
                 System.out.println("Invalid input");
+            }
         }
-        while(choice != 0);
-        input.close();
-        }
-        }
+    }
+}
