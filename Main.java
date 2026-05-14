@@ -14,6 +14,7 @@ public class Main
     {
         Scanner input = new Scanner(System.in);
         gameLibrary library = new gameLibrary();
+        
         int choice;
         
         System.out.println("====Options====");
@@ -55,6 +56,15 @@ public class Main
             //case 7:
                 //Game.getDetails();
                 //break;
+            //case 8:
+                //Game.addRating();
+                //break;
+            case 9:
+                //gameSession.Start();
+                break;
+            case 10:
+                //gameSession.End();
+                break; 
             case 11:
                 System.out.print("Game name: ");
                 String name = input.nextLine();
